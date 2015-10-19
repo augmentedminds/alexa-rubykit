@@ -89,7 +89,7 @@ module AlexaRubykit
       response[:version] = @version
       response[:sessionAttributes] = @session_attributes unless @session_attributes.empty?
       response[:response] = response_object
-      response.to_json
+      response
     end
 
     # Outputs the version, session object and the response object.
